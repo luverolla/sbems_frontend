@@ -1,0 +1,10 @@
+{% extends "layout/base.j2" %}
+{% block title %}List of users{% endblock %}
+{% block body %}
+<h1>List of users</h1>
+<ul>
+{% for user in users %}
+    <li><a href="/users/{{ user }}">{{ user }}</a></li>
+{% endfor %}
+</ul>
+{% endblock %}

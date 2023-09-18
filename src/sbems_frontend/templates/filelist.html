@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Files</title>
+</head>
+<body>
+    <!-- Jinja -->
+    <ul>
+        {% for file in files -%}
+        <li><a href="{{ '/files/%s'%file }}">{{file}}</a></li>
+        {% endfor %}
+    </ul>
+</html>
